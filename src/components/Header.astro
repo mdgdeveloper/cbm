@@ -1,0 +1,26 @@
+---
+// Basic Astro data
+
+import { navigation } from "../data/nav";
+import { infoMSG, infoLocation } from "../data/information";
+---
+
+<div>
+<!-- Subheader on Top -->
+    <div class="h-8 bg-black text-gray-300 text-sm p-1 flex justify-between">
+        <div class="basis-1/4">Left</div>
+        <div class="basis-1/2 flex justify-center items-center">{infoMSG.content}</div>
+        <div class="basis-1/4 pr-2 text-right">{infoLocation.content}</div>
+    </div>
+<!-- Main Header -->
+    <div class="bg-white min-h-24 flex flex-col justify-center items-center">
+        <div>Logo</div>
+        <div>
+            { navigation.map( (item, index) => (
+                <div class="inline-block px-4 py-2 text-gray-600 hover:text-gray-900 font-semibold">
+                    <a class="uppercase text-sm" href={item.link}>{item.name}</a>
+                </div>
+            ))}
+        </div>
+    </div>
+</div>
