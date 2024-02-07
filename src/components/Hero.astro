@@ -1,29 +1,37 @@
 ---
 import "@fontsource/birthstone";
+import "@fontsource-variable/urbanist";
+import Button from "./Button.astro";
 ---
 
-<div class="min-h-[750px] bg-cyan-300 min-w-full">
-    <div class="flex min-w-full items-center min-h-full">
-        <div class="basis-1/2 flex flex-col items-center pt-24 min-h-[450px]">
-            <div class="font-birthstone text-6xl">
-                Centro de Belleza Marleny
+<div class="flex items-center justify-center bg-orange-100">
+    <div class="min-h-[750px] bg-orange-100 w-5/6">
+        <div class="flex min-w-full items-center min-h-full">
+            <div
+                class="basis-1/2 flex flex-col items-center justify-start pt-24 min-h-[750px]"
+            >
+                <div class="font-birthstone text-11xl">Estilo Único</div>
+                <div class="font-birthstone text-4xl -mt-20 text-gray-900">
+                    Donde cada detalle resalta la esencia que te hace brillar.
+                </div>
+                <div class="pt-32 w-5/6 text-xl">
+                    Consulta nuestra nueva gama de tratamientos
+                    <Button
+                        label="Nuevos tratamientos"
+                        link="/tratamientos"
+                        color="blue"
+                    />
+                </div>
             </div>
-            <div>
-                Donde cada detalle resalta la esencia única que te hace brillar.
+            <div
+                class="basis-1/2 flex items-center justify-center min-h-[750px]"
+            >
+                <img
+                    src="/resources/img/hero.png"
+                    alt="Centro de Belleza Marleny"
+                    class="min-h-[750px] object-cover object-right"
+                />
             </div>
-            <div class="pt-14">
-                Consulta nuestra nueva gama de productos para el cuidado de la
-                piel
-            </div>
-        </div>
-        <div
-            class="basis-1/2 flex items-center justify-center min-h-[750px] bg-red-300"
-        >
-            <img
-                src="/resources/img/hero.png"
-                alt="Centro de Belleza Marleny"
-                class="h-full"
-            />
         </div>
     </div>
 </div>
