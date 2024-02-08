@@ -4,21 +4,27 @@
 import { navigation } from "../data/nav";
 import { infoMSG, infoLocation } from "../data/information";
 import Logo from "./Logo.astro";
+import SocialIcon from "./ui/SocialIcon.astro";
 ---
 
-<div>
-    <!-- Subheader on Top -->
-    <div class="h-8 bg-black text-gray-300 text-sm p-1 flex justify-between">
-        <div class="basis-1/4">Left</div>
-        <div class="basis-1/2 flex justify-center items-center">
-            {infoMSG.content}
+<div class="bg-mdgpurple flex justify-center w-screen">
+    <div>
+        <!-- Subheader on Top -->
+        <div
+            class="h-11 text-white flex justify-between max-w-screen-xl w-screen items-center font-semibold"
+        >
+            <div>C.C. La Alhóndiga, Local 8 - Buenavista del Norte</div>
+            <div class="flex gap-2">
+                <SocialIcon link="#" type="facebook" />
+                <SocialIcon link="#" type="instagram" />
+                <SocialIcon link="#" type="twitter" />
+            </div>
         </div>
-        <div class="basis-1/4 pr-2 text-right">{infoLocation.content}</div>
+        <!-- Main Header -->
     </div>
-    <!-- Main Header -->
-    <div
-        class="bg-orange-100 min-h-24 flex flex-col justify-center items-center"
-    >
+</div>
+<div class="bg-orange-100 flex justify-center">
+    <div class="min-h-24 w-[1024px] flex flex-col justify-center items-center">
         <div><Logo /></div>
         <div>
             {

@@ -12,6 +12,10 @@ export default {
 				'11xl': '12rem',
 				'12xl': '14rem',
 			},
+
+			colors: {
+				'mdgpurple': "#AB5E92"
+			}
 		},
 	},
 	plugins: [],

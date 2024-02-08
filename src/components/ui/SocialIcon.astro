@@ -1,0 +1,14 @@
+---
+// Importing Icons
+import { Icon } from "astro-icon/components";
+
+const { link, type } = Astro.props;
+---
+
+<div class="p-1 rounded-xl border">
+    <a href={link} target="_blank" rel="noreferrer">
+        {type === "facebook" && <Icon name="ri:facebook-fill" />}
+        {type === "instagram" && <Icon name="ri:instagram-line" />}
+        {type === "twitter" && <Icon name="ri:twitter-x-fill" />}
+    </a>
+</div>

@@ -15,7 +15,11 @@
     "@fontsource-variable/urbanist": "^5.0.19",
     "@fontsource/birthstone": "^5.0.18",
     "astro": "^4.1.2",
+    "astro-icon": "^1.1.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@iconify-json/ri": "^1.1.19"
   }
 }
