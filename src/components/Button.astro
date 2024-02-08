@@ -1,0 +1,15 @@
+---
+const { label, link, color } = Astro.props;
+
+const colorCSS: Record<string, string> = {
+    red: "bg-red-500",
+    green: "bg-green-500",
+    blue: "bg-blue-500",
+};
+---
+
+<div
+    class="mt-2 p-4 w-full bg-orange-300 rounded-md text-center font-semibold text-gray-100 cursor-pointer hover:bg-orange-600 transition-colors duration-500 ease-in-out hover:shadow-sm"
+>
+    {label}
+</div>
