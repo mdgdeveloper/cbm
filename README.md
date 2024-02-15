@@ -11,3 +11,9 @@ https://hair-salon.weblium.site/
 - https://www.butterflystudiosalon.com/
 - https://www.bloombeautylounge.com/
 - https://thecleanbeautylab.com/
+
+## Documentation
+
+### Parallax
+
+- ▶️ [https://www.youtube.com/watch?v=C-NBjwgATsc](https://www.youtube.com/watch?v=C-NBjwgATsc)
