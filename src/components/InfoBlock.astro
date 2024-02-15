@@ -1,0 +1,13 @@
+---
+const { title, content }: { title: string; content: string } = Astro.props as {
+    title: string;
+    content: string;
+};
+---
+
+<div class="bg-white p-20 flex justify-center">
+    <div class="text-center max-w-screen-md">
+        <h2 class="text-4xl font-bold pb-8">{title}</h2>
+        <p class="text-xl font-light">{content}</p>
+    </div>
+</div>

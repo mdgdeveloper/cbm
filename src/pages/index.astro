@@ -1,19 +1,24 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Header from '../components/Header.astro';
-import Hero from '../components/Hero.astro';
-import Services from '../components/Services.astro';
-import Customers from '../components/Customers.astro';
-import Contact from '../components/Contact.astro';
-import Booking from '../components/Booking.astro';
-import Footer from '../components/Footer.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import InfoBlock from "../components/InfoBlock.astro";
+import Services from "../components/Services.astro";
+import Customers from "../components/Customers.astro";
+import Contact from "../components/Contact.astro";
+import Booking from "../components/Booking.astro";
+import Footer from "../components/Footer.astro";
+
+// Data
+import { info } from "../data/general";
 ---
 
 <Layout title="Welcome to Astro.">
 	<Header />
 	<main>
 		<Hero />
+		<InfoBlock title={info.title} content={info.content} />
 		<Services />
 		<Customers />
 		<Contact />
