@@ -16,7 +16,7 @@ export const navigation: Nav[] = [
     "id": 2,
     "name": "Servicios",
     "icon": "fa-scissors",
-    "link": "/servicios"
+    "link": "#servicios"
   },
   {
     "id": 3,
