@@ -1,6 +1,7 @@
 interface Service {
   id: number;
   name: string;
+  img: string;
   description: string;
   icon: string;
   link: string;
@@ -19,36 +20,39 @@ export const services: Service[] = [
     "name": "Corte de pelo",
     "description": "Servicio de corte de cabello para hombres y mujeres.",
     "icon": "fa-scissors",
+    "img": "services_1.jpg",
     "link": "/corte-de-pelo"
   },
   {
     "id": 2,
     "name": "Coloración",
     "description": "Aplicación de tintes y coloración para el cabello.",
+    "img": "services_2.jpg",
     "icon": "fa-paint-brush",
     "link": "/coloracion"
   },
   {
     "id": 3,
-    "name": "Manicura y pedicura",
-    "description": "Tratamientos para uñas de manos y pies.",
-    "icon": "fa-hand-rock",
-    "link": "/manicura-pedicura"
-  },
-  {
-    "id": 4,
     "name": "Maquillaje",
-    "description": "Servicio de maquillaje para eventos y ocasiones especiales.",
-    "icon": "fa-makeup-brush",
+    "description": "Tratamientos de belleza",
+    "img": "services_3.jpg",
+    "icon": "fa-hand-rock",
     "link": "/maquillaje"
   },
-  {
-    "id": 5,
-    "name": "Tratamientos capilares",
-    "description": "Tratamientos para mejorar la salud y apariencia del cabello.",
-    "icon": "fa-flask",
-    "link": "/tratamientos-capilares"
-  }
+  // {
+  //   "id": 4,
+  //   "name": "Maquillaje",
+  //   "description": "Servicio de maquillaje para eventos y ocasiones especiales.",
+  //   "icon": "fa-makeup-brush",
+  //   "link": "/maquillaje"
+  // },
+  // {
+  //   "id": 5,
+  //   "name": "Tratamientos capilares",
+  //   "description": "Tratamientos para mejorar la salud y apariencia del cabello.",
+  //   "icon": "fa-flask",
+  //   "link": "/tratamientos-capilares"
+  // }
 ]
 
 export const socials: Social[] = [

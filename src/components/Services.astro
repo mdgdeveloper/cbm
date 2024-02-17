@@ -1,0 +1,17 @@
+---
+import Service from "./Service.astro";
+// Additional information
+import { services } from "../data/general";
+---
+
+<div
+    class="bg-white bg-[url('/resources/img/bg-pattern.jpg')] bg-[length:400px_400px] bg-repeat p-10 min-h-40 flex justify-center bg-opacity-35"
+>
+    <div class="pt-10 pb-10">
+        <h2 class="text-center text-5xl pb-16">Servicios</h2>
+
+        <div class="flex gap-10">
+            {services.map((service) => <Service {...service} />)}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+---
+const { name, img, link } = Astro.props;
+---
+
+<div>
+    <a href={link} class="hover:opacity-80 transition duration-300 ease-in-out">
+        <img src={`/resources/img/${img}`} alt="serviceImg" />
+    </a>
+    <div class="relative flex justify-center z-10">
+        <h3
+            class="w-72 bg-white text-center px-5 text-2xl font-semibold -m-5 pt-1 pb-2"
+        >
+            <a href={link}>{name}</a>
+        </h3>
+    </div>
+</div>
