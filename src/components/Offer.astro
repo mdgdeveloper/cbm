@@ -1,9 +1,25 @@
 ---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
 const { promo } = Astro.props;
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+    "/src/assets/promos/*.jpg",
+);
+
+const path = promo.img;
 ---
 
-<div>
-    <h1><a href={promo.link}></a>{promo.title}</h1>
-    <p>{promo.description}</p>
-    <img src={promo.img} alt={promo.title} />
+<div class="flex flex-col pb-20">
+    <Image
+        src={images[path]()}
+        alt={promo.title}
+        width="350"
+        height="350"
+        class="pb-5"
+    />
+    <h1 class="text-2xl font-semibold pb-2">
+        <a href={promo.link}></a>{promo.title}
+    </h1>
+    <p class="text-jusitify font-light text-lg">{promo.description}</p>
 </div>

@@ -13,6 +13,7 @@ import Footer from "../components/Footer.astro";
 
 // Data
 import { info } from "../data/general";
+import { promos } from "../data/general";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -21,7 +22,7 @@ import { info } from "../data/general";
 		<Hero />
 		<InfoBlock title={info.title} content={info.content} />
 		<Services />
-		<Offers />
+		<Offers offers={promos} />
 		<Customers />
 		<Contact />
 		<Booking />

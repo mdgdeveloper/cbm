@@ -6,7 +6,11 @@ import Offer from "../components/Offer.astro";
 const { offers } = Astro.props;
 ---
 
-<div class="bg-white p-20">
-    <h2 class="text-center text-5xl pb-16">Promociones</h2>
-    {offers.map((offer: Promo) => <Offer promo={offer} />)}
+<div class="bg-white p-20 flex justify-center">
+    <div class="w-9/12">
+        <h2 class="text-center text-5xl pb-16">Promociones</h2>
+        <div class="grid grid-cols-3 gap-5 p-8">
+            {offers.map((offer: Promo) => <Offer promo={offer} />)}
+        </div>
+    </div>
 </div>

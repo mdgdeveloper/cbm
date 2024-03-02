@@ -99,43 +99,43 @@ export const promos: Promo[] = [
   {
     id: 1,
     title: "Rejuvenece con CBM",
-    img: "promos/promo_1.jpg",
+    img: "/src/assets/promos/promo_1.jpg",
     link: "#",
-    description: "Disfruta de un 20% de descuento en todos nuestros tratamientos de piel, incluyendo limpiezas faciales profundas y terapias anti-envejecimiento. Renueva tu piel y déjala radiante."
+    description: "Obtén un 20% de descuento en tratamientos de piel, incluyendo limpiezas faciales profundas y terapias anti-envejecimiento."
   },
   {
     id: 2,
     title: "Transformación Capilar CBM",
-    img: "promos/promo_2.jpg",
+    img: "/src/assets/promos/promo_2.jpg",
     link: "#",
-    description: "Obtén un 15% de descuento en tratamientos capilares revitalizantes. Incluye análisis capilar personalizado y opciones de hidratación profunda o reparación de daños. Cambia tu look y siente la diferencia."
+    description: "Obtén un 15% de descuento en tratamientos capilares revitalizantes."
   },
   {
     id: 3,
     title: "CBM Cuerpo y Mente",
-    img: "promos/promo_3.jpg",
+    img: "/src/assets/promos/promo_3.jpg",
     link: "#",
-    description: "Paquete especial de terapias corporales: incluye una sesión de masaje relajante + tratamiento corporal exfoliante con un 25% de descuento. Perfecto para desconectar y rejuvenecer cuerpo y mente."
+    description: "Paquete especial de terapias corporales: sesión de masaje relajante + tratamiento corporal exfoliante con un 25% de descuento."
   },
   {
     id: 4,
     title: "Color y Corte con Estilo CBM",
-    img: "promos/promo_4.jpg",
+    img: "/src/assets/promos/promo_4.jpg",
     link: "#",
-    description: "Experimenta nuestro servicio exclusivo de corte y teñido con un 10% de descuento. Personalizamos tu look según las últimas tendencias. Atrévete a cambiar con nosotros."
+    description: "Servicio exclusivo de corte y teñido con un 10% de descuento. Personalizamos tu look según las últimas tendencias."
   },
   {
     id: 5,
     title: "Día de Belleza CBM",
-    img: "promos/promo_5.jpg",
+    img: "/src/assets/promos/promo_5.jpg",
     link: "#",
-    description: "Reserva un paquete completo que incluye tratamiento capilar, facial, corte y teñido con un 30% de descuento. Un día para consentirte de pies a cabeza en CBM."
+    description: "Reserva un paquete completo que incluye tratamiento capilar, facial, corte y teñido con un 30% de descuento."
   },
   {
     id: 6,
     title: "Miércoles de Amigas en CBM",
-    img: "promos/promo_6.jpg",
+    img: "/src/assets/promos/promo_6.jpg",
     link: "#",
-    description: "Ven con una amiga los miércoles y ambas recibirán un 20% de descuento en cualquier servicio. Es el momento perfecto para compartir un día de belleza y cuidado."
+    description: "Ven con una amiga los miércoles y ambas recibirán un 20% de descuento en cualquier servicio."
   },
 ]
