@@ -6,6 +6,7 @@ import Hero from "../components/Hero.astro";
 import InfoBlock from "../components/InfoBlock.astro";
 import Services from "../components/Services.astro";
 import Offers from "../components/Offers.astro";
+import Works from "../components/Works.astro";
 import Customers from "../components/Customers.astro";
 import Contact from "../components/Contact.astro";
 import Booking from "../components/Booking.astro";
@@ -23,6 +24,7 @@ import { promos } from "../data/general";
 		<InfoBlock title={info.title} content={info.content} />
 		<Services />
 		<Offers offers={promos} />
+		<Works />
 		<Customers />
 		<Contact />
 		<Booking />
