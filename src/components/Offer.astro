@@ -1,0 +1,9 @@
+---
+const { promo } = Astro.props;
+---
+
+<div>
+    <h1><a href={promo.link}></a>{promo.title}</h1>
+    <p>{promo.description}</p>
+    <img src={promo.img} alt={promo.title} />
+</div>
