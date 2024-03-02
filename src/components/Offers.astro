@@ -1,8 +1,12 @@
 ---
+import { type Promo } from "../data/general";
+
+import Offer from "../components/Offer.astro";
 // Data
 const { offers } = Astro.props;
 ---
 
 <div class="bg-white p-20">
     <h2 class="text-center text-5xl pb-16">Promociones</h2>
+    {offers.map((offer: Promo) => <Offer promo={offer} />)}
 </div>

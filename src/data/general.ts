@@ -14,7 +14,7 @@ interface Social {
   link: string;
 }
 
-interface Promo {
+export interface Promo {
   id: number;
   title: string;
   img: string;
@@ -99,42 +99,42 @@ export const promos: Promo[] = [
   {
     id: 1,
     title: "Rejuvenece con CBM",
-    img: "promo_1.jpg",
+    img: "promos/promo_1.jpg",
     link: "#",
     description: "Disfruta de un 20% de descuento en todos nuestros tratamientos de piel, incluyendo limpiezas faciales profundas y terapias anti-envejecimiento. Renueva tu piel y déjala radiante."
   },
   {
     id: 2,
     title: "Transformación Capilar CBM",
-    img: "promo_2.jpg",
+    img: "promos/promo_2.jpg",
     link: "#",
     description: "Obtén un 15% de descuento en tratamientos capilares revitalizantes. Incluye análisis capilar personalizado y opciones de hidratación profunda o reparación de daños. Cambia tu look y siente la diferencia."
   },
   {
     id: 3,
     title: "CBM Cuerpo y Mente",
-    img: "promo_3.jpg",
+    img: "promos/promo_3.jpg",
     link: "#",
     description: "Paquete especial de terapias corporales: incluye una sesión de masaje relajante + tratamiento corporal exfoliante con un 25% de descuento. Perfecto para desconectar y rejuvenecer cuerpo y mente."
   },
   {
     id: 4,
     title: "Color y Corte con Estilo CBM",
-    img: "promo_4.jpg",
+    img: "promos/promo_4.jpg",
     link: "#",
     description: "Experimenta nuestro servicio exclusivo de corte y teñido con un 10% de descuento. Personalizamos tu look según las últimas tendencias. Atrévete a cambiar con nosotros."
   },
   {
     id: 5,
     title: "Día de Belleza CBM",
-    img: "promo_5.jpg",
+    img: "promos/promo_5.jpg",
     link: "#",
     description: "Reserva un paquete completo que incluye tratamiento capilar, facial, corte y teñido con un 30% de descuento. Un día para consentirte de pies a cabeza en CBM."
   },
   {
     id: 6,
     title: "Miércoles de Amigas en CBM",
-    img: "promo_6.jpg",
+    img: "promos/promo_6.jpg",
     link: "#",
     description: "Ven con una amiga los miércoles y ambas recibirán un 20% de descuento en cualquier servicio. Es el momento perfecto para compartir un día de belleza y cuidado."
   },
