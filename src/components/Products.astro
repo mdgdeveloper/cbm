@@ -1,0 +1,28 @@
+---
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+    "/src/assets/marcas/*.png",
+);
+
+const marcas = Object.entries(images).map(([path, image]) => ({
+    path,
+    image,
+}));
+
+console.log("marcas", marcas);
+---
+
+<div class="bg-white p-20 flex justify-center w-screen">
+    <div class="max-w-screen-xl w-screen flex items-center flex-col">
+        <h2 class="text-center text-5xl pb-16">Nuestras marcas</h2>
+        <div class="flex justify-between max-w-screen-lg">
+            <div class="grow-0"><Icon name="left" class="text-5xl" /></div>
+            <div class="grow">
+                <Image src={marcas[0]["image"]()} alt="Marca" class="w-full" />
+            </div>
+            <div class="grow-0"><Icon name="right" class="text-5xl" /></div>
+        </div>
+    </div>
+</div>
