@@ -23,17 +23,16 @@ console.log("marcas", marcas);
             </div>
             <div class="grow overflow-hidden max-w-3xl">
                 <div
-                    class="flex gap-12 px-10 transition-transform duration-500 ease-in-out"
+                    class="flex gap-12 transition-transform duration-500 ease-in-out"
                     id="container"
                 >
                     {
                         marcas.map((marca) => (
-                            <div class="grow min-w-[150px]">
+                            <div class="grow min-w-[150px] bg-gray-300 flex justify-center items-center">
                                 <Image
                                     src={marca["image"]()}
                                     alt="Marca"
-                                    class="marca"
-                                    height={120}
+                                    class="p-5"
                                 />
                             </div>
                         ))
@@ -51,27 +50,34 @@ console.log("marcas", marcas);
     // Add a const with the value of the tailwindcss to move the images to the right by 120 px
 
     let currentPosition = 0;
+    let counter = 0;
     // transition-transform duration-300 ease-in-out";
     const moveRight = () => {
         // Remove the class with the current position
-        const container = document.getElementById("container");
-        currentPosition += 15;
-        container &&
-            container.style.setProperty(
-                "transform",
-                `translateX(-${currentPosition}rem)`,
-            );
+        if (counter < 2) {
+            const container = document.getElementById("container");
+            currentPosition += 200;
+            container &&
+                container.style.setProperty(
+                    "transform",
+                    `translateX(-${currentPosition}px)`,
+                );
+            counter++;
+        }
     };
 
     const moveLeft = () => {
         // Remove the class with the current position
-        const container = document.getElementById("container");
-        currentPosition -= 15;
-        container &&
-            container.style.setProperty(
-                "transform",
-                `translateX(-${currentPosition}rem)`,
-            );
+        if (counter > 0) {
+            const container = document.getElementById("container");
+            currentPosition -= 200;
+            container &&
+                container.style.setProperty(
+                    "transform",
+                    `translateX(-${currentPosition}px)`,
+                );
+            counter--;
+        }
     };
 
     // Add the event listener to the right arrow
