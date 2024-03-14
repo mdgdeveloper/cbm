@@ -17,12 +17,66 @@ console.log("marcas", marcas);
 <div class="bg-white p-20 flex justify-center w-screen">
     <div class="max-w-screen-xl w-screen flex items-center flex-col">
         <h2 class="text-center text-5xl pb-16">Nuestras marcas</h2>
-        <div class="flex justify-between max-w-screen-lg">
-            <div class="grow-0"><Icon name="left" class="text-5xl" /></div>
-            <div class="grow">
-                <Image src={marcas[0]["image"]()} alt="Marca" class="w-full" />
+        <div class="flex justify-between max-w-screen-lg gap-5">
+            <div class="grow-0 cursor-pointer flex items-center" id="left">
+                <Icon name="left" class="text-5xl" />
             </div>
-            <div class="grow-0"><Icon name="right" class="text-5xl" /></div>
+            <div class="grow overflow-hidden max-w-3xl">
+                <div
+                    class="flex gap-12 px-10 transition-transform duration-500 ease-in-out"
+                    id="container"
+                >
+                    {
+                        marcas.map((marca) => (
+                            <div class="grow min-w-[150px]">
+                                <Image
+                                    src={marca["image"]()}
+                                    alt="Marca"
+                                    class="marca"
+                                    height={120}
+                                />
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+            <div class="grow-0 cursor-pointer flex items-center" id="right">
+                <Icon name="right" class="text-5xl" />
+            </div>
         </div>
     </div>
 </div>
+
+<script>
+    // Add a const with the value of the tailwindcss to move the images to the right by 120 px
+
+    let currentPosition = 0;
+    // transition-transform duration-300 ease-in-out";
+    const moveRight = () => {
+        // Remove the class with the current position
+        const container = document.getElementById("container");
+        currentPosition += 15;
+        container &&
+            container.style.setProperty(
+                "transform",
+                `translateX(-${currentPosition}rem)`,
+            );
+    };
+
+    const moveLeft = () => {
+        // Remove the class with the current position
+        const container = document.getElementById("container");
+        currentPosition -= 15;
+        container &&
+            container.style.setProperty(
+                "transform",
+                `translateX(-${currentPosition}rem)`,
+            );
+    };
+
+    // Add the event listener to the right arrow
+    document &&
+        document.getElementById("right")?.addEventListener("click", moveRight);
+    document &&
+        document.getElementById("left")?.addEventListener("click", moveLeft);
+</script>
